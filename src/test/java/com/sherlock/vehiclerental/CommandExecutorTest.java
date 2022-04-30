@@ -32,9 +32,9 @@ public class CommandExecutorTest {
                 "TRUE",
                 "FALSE",
                 "-1",
-                "1000.0",
-                "250.0",
-                "900.0",
+                "1000",
+                "250",
+                "900",
                 "V2"
         );
         List<String> programOutput = new CommandExecutor().executeCommands(commands);

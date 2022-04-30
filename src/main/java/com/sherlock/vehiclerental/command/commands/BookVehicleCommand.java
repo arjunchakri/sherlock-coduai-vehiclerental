@@ -44,7 +44,7 @@ public class BookVehicleCommand implements ICommand {
             if(available) {
                 booking.setVehicleId(vehicleBean.getId());
                 DataRepository.getInstance().addBooking(booking);
-                return String.valueOf(vehicleBean.getPrice() * (end - start));
+                return String.valueOf((int) vehicleBean.getPrice() * (end - start));
             }
 
         }
